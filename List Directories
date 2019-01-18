@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Simple bash script to list Directories and Sub-directories recursively
+
+echo Location of this file: "$(dirname "$BASH_SOURCE")"
+
+cd "$(dirname "$0")"
+
+# Change the "Output".txt to any name you want
+ls -R > Output.txt
+
+open Output.txt
